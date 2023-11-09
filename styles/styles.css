@@ -120,18 +120,21 @@ div.date1 {
     text-align: right;
 }
 
-/* Style the footer */
-footer {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
-}
+
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 @media (max-width: 600px) {
+
     section {
         -webkit-flex-direction: column;
         flex-direction: column;
+
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    section {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
